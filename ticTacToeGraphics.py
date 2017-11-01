@@ -16,7 +16,3 @@ if __name__ == '__main__':
     
     Sprite(blackLine1,(1012,0))
     App().run()
-    
-
-
-
