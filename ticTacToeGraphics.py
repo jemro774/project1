@@ -10,9 +10,9 @@ if __name__ == '__main__':
     
     black = Color(0x000000,1)
     
-    blackOutline = LineStyle(5,black)
+    blackOutline = LineStyle(8,black)
     
     blackLine1 = LineAsset(0,50,blackOutline)
     
-    Sprite(blackLine1,(1012,0))
+    Sprite(blackLine1,(1014,0))
     App().run()
