@@ -12,7 +12,13 @@ if __name__ == '__main__':
     
     blackOutline = LineStyle(8,black)
     
-    blackLine1 = LineAsset(0,50,blackOutline)
+    verticalLine1 = LineAsset(0,480,blackOutline)
+    verticalLine2 = LineAsset(0,480,blackOutline)
+    horizontalLine1 = LineAsset(480,0,blackOutline)
+    horizontalLine2 = LineAsset(480,0,blackOutline)
     
-    Sprite(blackLine1,(1014,0))
+    Sprite(verticalLine1,(300,24))
+    Sprite(verticalLine2,(460,24))
+    Sprite(horizontalLine1,(140,184))
+    Sprite(horizontalLine2,(140,344))
     App().run()
