@@ -24,5 +24,5 @@ if __name__ == '__main__':
     Sprite(horizontalLine1,(140,184))
     Sprite(horizontalLine2,(140,344))
     Sprite(x1part1,(320,44))
-    Sprite(x1part2,(320,44))
+    Sprite(x1part2,(440,44))
     App().run()
