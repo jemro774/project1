@@ -47,7 +47,7 @@ def mouseClick(event):
         xpart2 = LineAsset(-120,120,blackOutline)
         Sprite(xpart1,(320,364))
         Sprite(xpart2,(440,364))
-    else:
+    elif event.x < 620 and event.y < 504:
         xpart1 = LineAsset(120,120,blackOutline)
         xpart2 = LineAsset(-120,120,blackOutline)
         Sprite(xpart1,(480,364))
@@ -92,7 +92,6 @@ if __name__ == '__main__':
     Sprite(horizontalLine,(140,184))
     Sprite(horizontalLine,(140,344))
     
-    computerTurn()
-    
     App().listenMouseEvent('click',mouseClick)
+    computerTurn()
     App().run()
