@@ -7,11 +7,31 @@ from ggame import *
 from random import randint
 
 def mouseClick(event):
-    if event.x < 160 and event.y < 160:
+    if event.x < 300 and event.y < 184:
         xpart1 = LineAsset(120,120,blackOutline)
         xpart2 = LineAsset(-120,120,blackOutline)
         Sprite(xpart1,(160,44))
         Sprite(xpart2,(280,44))
+    elif event.x < 460 and event.y < 184:
+        xpart1 = LineAsset(120,120,blackOutline)
+        xpart2 = LineAsset(-120,120,blackOutline)
+        Sprite(xpart1,(320,44))
+        Sprite(xpart2,(440,44))
+    elif event.x < 620 and event.y < 184:
+        xpart1 = LineAsset(120,120,blackOutline)
+        xpart2 = LineAsset(-120,120,blackOutline)
+        Sprite(xpart1,(480,44))
+        Sprite(xpart2,(600,44))
+    elif event.x < 300 and event.y < 344:
+        xpart1 = LineAsset(120,120,blackOutline)
+        xpart2 = LineAsset(-120,120,blackOutline)
+        Sprite(xpart1,(160,204))
+        Sprite(xpart2,(280,204))
+    elif event.x < 460 and event.y < 344:
+        xpart1 = LineAsset(120,120,blackOutline)
+        xpart2 = LineAsset(-120,120,blackOutline)
+        Sprite(xpart1,(320,204))
+        Sprite(xpart2,(440,204))
 
 if __name__ == '__main__':
     
