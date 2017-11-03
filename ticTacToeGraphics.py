@@ -52,6 +52,9 @@ def mouseClick(event):
         xpart2 = LineAsset(-120,120,blackOutline)
         Sprite(xpart1,(480,364))
         Sprite(xpart2,(600,364))
+    
+def computerTurn():
+    
 
 if __name__ == '__main__':
     
@@ -70,24 +73,7 @@ if __name__ == '__main__':
     Sprite(verticalLine,(460,24))
     Sprite(horizontalLine,(140,184))
     Sprite(horizontalLine,(140,344))
-    '''Sprite(xpart1,(320,44))
-    Sprite(xpart2,(440,44))
-    Sprite(xpart1,(320,204))
-    Sprite(xpart2,(440,204))
-    Sprite(xpart1,(320,364))
-    Sprite(xpart2,(440,364))
-    Sprite(xpart1,(160,44))
-    Sprite(xpart2,(280,44))
-    Sprite(xpart1,(160,204))
-    Sprite(xpart2,(280,204))
-    Sprite(xpart1,(160,364))
-    Sprite(xpart2,(280,364))
-    Sprite(xpart1,(480,44))
-    Sprite(xpart2,(600,44))
-    Sprite(xpart1,(480,204))
-    Sprite(xpart2,(600,204))
-    Sprite(xpart1,(480,364))
-    Sprite(xpart2,(600,364))
+    
     Sprite(o,(380,100))
     Sprite(o,(380,260))
     Sprite(o,(380,420))
@@ -96,7 +82,7 @@ if __name__ == '__main__':
     Sprite(o,(220,420))
     Sprite(o,(540,100))
     Sprite(o,(540,260))
-    Sprite(o,(540,420))'''
+    Sprite(o,(540,420))
     
     App().listenMouseEvent('click',mouseClick)
     App().run()
