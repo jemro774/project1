@@ -54,7 +54,52 @@ def mouseClick(event):
         Sprite(xpart2,(600,364))
     
 def computerTurn():
-    
+    num = randint(1,9)
+    if num == 1:
+        xpart1 = LineAsset(120,120,blackOutline)
+        xpart2 = LineAsset(-120,120,blackOutline)
+        Sprite(xpart1,(160,44))
+        Sprite(xpart2,(280,44))
+    elif num == 2:
+        xpart1 = LineAsset(120,120,blackOutline)
+        xpart2 = LineAsset(-120,120,blackOutline)
+        Sprite(xpart1,(320,44))
+        Sprite(xpart2,(440,44))
+    elif num == 3:
+        xpart1 = LineAsset(120,120,blackOutline)
+        xpart2 = LineAsset(-120,120,blackOutline)
+        Sprite(xpart1,(480,44))
+        Sprite(xpart2,(600,44))
+    elif num == 4:
+        xpart1 = LineAsset(120,120,blackOutline)
+        xpart2 = LineAsset(-120,120,blackOutline)
+        Sprite(xpart1,(160,204))
+        Sprite(xpart2,(280,204))
+    elif num == 5:
+        xpart1 = LineAsset(120,120,blackOutline)
+        xpart2 = LineAsset(-120,120,blackOutline)
+        Sprite(xpart1,(320,204))
+        Sprite(xpart2,(440,204))
+    elif num == 6:
+        xpart1 = LineAsset(120,120,blackOutline)
+        xpart2 = LineAsset(-120,120,blackOutline)
+        Sprite(xpart1,(480,204))
+        Sprite(xpart2,(600,204))
+    elif num == 7:
+        xpart1 = LineAsset(120,120,blackOutline)
+        xpart2 = LineAsset(-120,120,blackOutline)
+        Sprite(xpart1,(160,364))
+        Sprite(xpart2,(280,364))
+    elif num == 8:
+        xpart1 = LineAsset(120,120,blackOutline)
+        xpart2 = LineAsset(-120,120,blackOutline)
+        Sprite(xpart1,(320,364))
+        Sprite(xpart2,(440,364))
+    else:
+        part1 = LineAsset(120,120,blackOutline)
+        xpart2 = LineAsset(-120,120,blackOutline)
+        Sprite(xpart1,(480,364))
+        Sprite(xpart2,(600,364))
 
 if __name__ == '__main__':
     
