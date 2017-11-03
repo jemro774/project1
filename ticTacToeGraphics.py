@@ -56,50 +56,23 @@ def mouseClick(event):
 def computerTurn():
     num = randint(1,9)
     if num == 1:
-        xpart1 = LineAsset(120,120,blackOutline)
-        xpart2 = LineAsset(-120,120,blackOutline)
-        Sprite(xpart1,(160,44))
-        Sprite(xpart2,(280,44))
+        Sprite(o,(380,100))
     elif num == 2:
-        xpart1 = LineAsset(120,120,blackOutline)
-        xpart2 = LineAsset(-120,120,blackOutline)
-        Sprite(xpart1,(320,44))
-        Sprite(xpart2,(440,44))
+        Sprite(o,(380,260))
     elif num == 3:
-        xpart1 = LineAsset(120,120,blackOutline)
-        xpart2 = LineAsset(-120,120,blackOutline)
-        Sprite(xpart1,(480,44))
-        Sprite(xpart2,(600,44))
+        Sprite(o,(380,420))
     elif num == 4:
-        xpart1 = LineAsset(120,120,blackOutline)
-        xpart2 = LineAsset(-120,120,blackOutline)
-        Sprite(xpart1,(160,204))
-        Sprite(xpart2,(280,204))
+        Sprite(o,(220,100))
     elif num == 5:
-        xpart1 = LineAsset(120,120,blackOutline)
-        xpart2 = LineAsset(-120,120,blackOutline)
-        Sprite(xpart1,(320,204))
-        Sprite(xpart2,(440,204))
+        Sprite(o,(220,260))
     elif num == 6:
-        xpart1 = LineAsset(120,120,blackOutline)
-        xpart2 = LineAsset(-120,120,blackOutline)
-        Sprite(xpart1,(480,204))
-        Sprite(xpart2,(600,204))
+        Sprite(o,(220,420))
     elif num == 7:
-        xpart1 = LineAsset(120,120,blackOutline)
-        xpart2 = LineAsset(-120,120,blackOutline)
-        Sprite(xpart1,(160,364))
-        Sprite(xpart2,(280,364))
+        Sprite(o,(540,100))
     elif num == 8:
-        xpart1 = LineAsset(120,120,blackOutline)
-        xpart2 = LineAsset(-120,120,blackOutline)
-        Sprite(xpart1,(320,364))
-        Sprite(xpart2,(440,364))
+        Sprite(o,(540,260))
     else:
-        part1 = LineAsset(120,120,blackOutline)
-        xpart2 = LineAsset(-120,120,blackOutline)
-        Sprite(xpart1,(480,364))
-        Sprite(xpart2,(600,364))
+        Sprite(o,(540,420))
 
 if __name__ == '__main__':
     
@@ -119,15 +92,7 @@ if __name__ == '__main__':
     Sprite(horizontalLine,(140,184))
     Sprite(horizontalLine,(140,344))
     
-    Sprite(o,(380,100))
-    Sprite(o,(380,260))
-    Sprite(o,(380,420))
-    Sprite(o,(220,100))
-    Sprite(o,(220,260))
-    Sprite(o,(220,420))
-    Sprite(o,(540,100))
-    Sprite(o,(540,260))
-    Sprite(o,(540,420))
+    computerTurn()
     
     App().listenMouseEvent('click',mouseClick)
     App().run()
