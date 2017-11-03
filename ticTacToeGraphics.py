@@ -32,6 +32,26 @@ def mouseClick(event):
         xpart2 = LineAsset(-120,120,blackOutline)
         Sprite(xpart1,(320,204))
         Sprite(xpart2,(440,204))
+    elif event.x < 620 and event.y < 344:
+        xpart1 = LineAsset(120,120,blackOutline)
+        xpart2 = LineAsset(-120,120,blackOutline)
+        Sprite(xpart1,(480,204))
+        Sprite(xpart2,(600,204))
+    elif event.x < 300 and event.y < 504:
+        xpart1 = LineAsset(120,120,blackOutline)
+        xpart2 = LineAsset(-120,120,blackOutline)
+        Sprite(xpart1,(160,364))
+        Sprite(xpart2,(280,364))
+    elif event.x < 460 and event.y < 504:
+        xpart1 = LineAsset(120,120,blackOutline)
+        xpart2 = LineAsset(-120,120,blackOutline)
+        Sprite(xpart1,(320,364))
+        Sprite(xpart2,(440,364))
+    else:
+        xpart1 = LineAsset(120,120,blackOutline)
+        xpart2 = LineAsset(-120,120,blackOutline)
+        Sprite(xpart1,(480,364))
+        Sprite(xpart2,(600,364))
 
 if __name__ == '__main__':
     
