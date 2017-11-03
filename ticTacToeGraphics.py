@@ -93,5 +93,4 @@ if __name__ == '__main__':
     Sprite(horizontalLine,(140,344))
     
     App().listenMouseEvent('click',mouseClick)
-    computerTurn()
     App().run()
