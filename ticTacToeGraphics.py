@@ -75,7 +75,21 @@ def computerTurn():
     else:
         Sprite(o,(540,420))
 
+def isEmpty():
+    if data['square1'] = 'X':
+        return False
+
 if __name__ == '__main__':
+    
+    data = {}
+    data['square1'] = ''
+    data['square2'] = ''
+    data['square3'] = ''
+    data['square4'] = ''
+    data['square5'] = ''
+    data['square6'] = ''
+    data['square7'] = ''
+    data['square8'] = ''
     
     black = Color(0x000000,1)
     white = Color(0xffffff,1)
