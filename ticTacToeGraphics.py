@@ -6,7 +6,7 @@ from ggame import *
 from random import randint
 
 def mouseClick(event):
-    if event.x < 300 and event.y < 184:
+    if event.x < 300 and event.y < 184 and isEmpty(1):
         xpart1 = LineAsset(120,120,blackOutline)
         xpart2 = LineAsset(-120,120,blackOutline)
         Sprite(xpart1,(160,44))
@@ -111,6 +111,8 @@ def isEmpty(x):
         return True
     elif x == 9 and data['square9'] == '':
         return True
+    else:
+        return False
 
 if __name__ == '__main__':
     
