@@ -12,7 +12,6 @@ def mouseClick(event):
         xpart2 = LineAsset(-120,120,blackOutline)
         Sprite(xpart1,(160,44))
         Sprite(xpart2,(280,44)) 
-        data['square1'] = 'X'
     elif event.x < 460 and event.y < 184:
         xpart1 = LineAsset(120,120,blackOutline)
         xpart2 = LineAsset(-120,120,blackOutline)
@@ -76,21 +75,7 @@ def computerTurn():
     else:
         Sprite(o,(540,420))
 
-def isEmpty(x):
-    if x == 1 and data['square1'] = 'X':
-        return False
-
 if __name__ == '__main__':
-    
-    data = {}
-    data['square1'] = ''
-    data['square2'] = ''
-    data['square3'] = ''
-    data['square4'] = ''
-    data['square5'] = ''
-    data['square6'] = ''
-    data['square7'] = ''
-    data['square8'] = ''
     
     black = Color(0x000000,1)
     white = Color(0xffffff,1)
