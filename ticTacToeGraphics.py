@@ -64,28 +64,28 @@ def mouseClick(event):
     
 def computerTurn():
     num = randint(1,9)
-    if num == 1:
+    if num == 1 and isEmpty(1):
         Sprite(o,(380,100))
         data['square1'] = 'O'
-    elif num == 2:
+    elif num == 2 and isEmpty(2):
         Sprite(o,(380,260))
         data['square2'] = 'O'
-    elif num == 3:
+    elif num == 3 and isEmpty(3):
         Sprite(o,(380,420))
         data['square3'] = 'O'
-    elif num == 4:
+    elif num == 4 and isEmpty(4):
         Sprite(o,(220,100))
         data['square4'] = 'O'
-    elif num == 5:
+    elif num == 5 and isEmpty(5):
         Sprite(o,(220,260))
         data['square5'] = 'O'
-    elif num == 6:
+    elif num == 6 and isEmpty(6):
         Sprite(o,(220,420))
         data['square6'] = 'O'
-    elif num == 7:
+    elif num == 7 and isEmpty(7):
         Sprite(o,(540,100))
         data['square7'] = 'O'
-    elif num == 8:
+    elif num == 8 and isEmpty(8):
         Sprite(o,(540,260))
         data['square8'] = 'O'
     else:
@@ -111,7 +111,41 @@ def isEmpty(x):
         return True
     elif x == 9 and data['square9'] == '':
         return True
-    else:
+    elif x == 1 and data['square1'] == 'X':
+        return False
+    elif x == 2 and data['square2'] == 'X':
+        return False
+    elif x == 3 and data['square3'] == 'X':
+        return False
+    elif x == 4 and data['square4'] == 'X':
+        return False
+    elif x == 5 and data['square5'] == 'X':
+        return False
+    elif x == 6 and data['square6'] == 'X':
+        return False
+    elif x == 7 and data['square7'] == 'X':
+        return False
+    elif x == 8 and data['square8'] == 'X':
+        return False
+    elif x == 9 and data['square9'] == 'X':
+        return False
+    elif x == 1 and data['square1'] == 'O':
+        return False
+    elif x == 2 and data['square2'] == 'O':
+        return False
+    elif x == 3 and data['square3'] == 'O':
+        return False
+    elif x == 4 and data['square4'] == 'O':
+        return False
+    elif x == 5 and data['square5'] == 'O':
+        return False
+    elif x == 6 and data['square6'] == 'O':
+        return False
+    elif x == 7 and data['square7'] == 'O':
+        return False
+    elif x == 8 and data['square8'] == 'O':
+        return False
+    elif x == 9 and data['square9'] == 'O':
         return False
 
 if __name__ == '__main__':
