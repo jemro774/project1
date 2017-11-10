@@ -6,55 +6,55 @@ from ggame import *
 from random import randint
 
 def mouseClick(event):
-    if event.x < 300 and event.y < 184 and isEmpty(1):
+    if event.x < 300 and event.x > 140 and event.y < 184 and event.y > 24 and isEmpty(1):
         xpart1 = LineAsset(120,120,blackOutline)
         xpart2 = LineAsset(-120,120,blackOutline)
         Sprite(xpart1,(160,44))
         Sprite(xpart2,(280,44))
         data['square1'] = 'X'
-    elif event.x < 460 and event.y < 184:
+    elif event.x < 460 and event.x > 300 and event.y < 184 and event.y > 24 and isEmpty(2):
         xpart1 = LineAsset(120,120,blackOutline)
         xpart2 = LineAsset(-120,120,blackOutline)
         Sprite(xpart1,(320,44))
         Sprite(xpart2,(440,44))
         data['square2'] = 'X'
-    elif event.x < 620 and event.y < 184:
+    elif event.x < 620 and event.x > 460 and event.y < 184 and event.y > 24 and isEmpty(3):
         xpart1 = LineAsset(120,120,blackOutline)
         xpart2 = LineAsset(-120,120,blackOutline)
         Sprite(xpart1,(480,44))
         Sprite(xpart2,(600,44))
         data['square3'] = 'X'
-    elif event.x < 300 and event.y < 344:
+    elif event.x < 300 and event.x > 140 and event.y < 344 and event.y > 184 and isEmpty(4):
         xpart1 = LineAsset(120,120,blackOutline)
         xpart2 = LineAsset(-120,120,blackOutline)
         Sprite(xpart1,(160,204))
         Sprite(xpart2,(280,204))
         data['square4'] = 'X'
-    elif event.x < 460 and event.y < 344:
+    elif event.x < 460 and event.x > 300 and event.y < 344 and event.y > 184 and isEmpty(5):
         xpart1 = LineAsset(120,120,blackOutline)
         xpart2 = LineAsset(-120,120,blackOutline)
         Sprite(xpart1,(320,204))
         Sprite(xpart2,(440,204))
         data['square5'] = 'X'
-    elif event.x < 620 and event.y < 344:
+    elif event.x < 620 and event.x > 460 and event.y < 344 and event.y > 184 and isEmpty(6):
         xpart1 = LineAsset(120,120,blackOutline)
         xpart2 = LineAsset(-120,120,blackOutline)
         Sprite(xpart1,(480,204))
         Sprite(xpart2,(600,204))
         data['square6'] = 'X'
-    elif event.x < 300 and event.y < 504:
+    elif event.x < 300 and event.x > 140 and event.y < 504 and event.y > 344 and isEmpty(7):
         xpart1 = LineAsset(120,120,blackOutline)
         xpart2 = LineAsset(-120,120,blackOutline)
         Sprite(xpart1,(160,364))
         Sprite(xpart2,(280,364))
         data['square7'] = 'X'
-    elif event.x < 460 and event.y < 504:
+    elif event.x < 460 and event.x > 300 and event.y < 504 and event.y > 344 and isEmpty(8):
         xpart1 = LineAsset(120,120,blackOutline)
         xpart2 = LineAsset(-120,120,blackOutline)
         Sprite(xpart1,(320,364))
         Sprite(xpart2,(440,364))
         data['square8'] = 'X'
-    elif event.x < 620 and event.y < 504:
+    elif event.x < 620 and event.x > 460 and event.y < 504 and event.y > 344 and isEmpty(9):
         xpart1 = LineAsset(120,120,blackOutline)
         xpart2 = LineAsset(-120,120,blackOutline)
         Sprite(xpart1,(480,364))
