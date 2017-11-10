@@ -111,41 +111,7 @@ def isEmpty(x):
         return True
     elif x == 9 and data['square9'] == '':
         return True
-    elif x == 1 and data['square1'] == 'X':
-        return False
-    elif x == 2 and data['square2'] == 'X':
-        return False
-    elif x == 3 and data['square3'] == 'X':
-        return False
-    elif x == 4 and data['square4'] == 'X':
-        return False
-    elif x == 5 and data['square5'] == 'X':
-        return False
-    elif x == 6 and data['square6'] == 'X':
-        return False
-    elif x == 7 and data['square7'] == 'X':
-        return False
-    elif x == 8 and data['square8'] == 'X':
-        return False
-    elif x == 9 and data['square9'] == 'X':
-        return False
-    elif x == 1 and data['square1'] == 'O':
-        return False
-    elif x == 2 and data['square2'] == 'O':
-        return False
-    elif x == 3 and data['square3'] == 'O':
-        return False
-    elif x == 4 and data['square4'] == 'O':
-        return False
-    elif x == 5 and data['square5'] == 'O':
-        return False
-    elif x == 6 and data['square6'] == 'O':
-        return False
-    elif x == 7 and data['square7'] == 'O':
-        return False
-    elif x == 8 and data['square8'] == 'O':
-        return False
-    elif x == 9 and data['square9'] == 'O':
+    else:
         return False
 
 if __name__ == '__main__':
