@@ -61,6 +61,7 @@ def mouseClick(event):
         Sprite(xpart2,(600,364))
         data['square9'] = 'X'
     computerTurn()
+    winner()
     
 def computerTurn():
     num = randint(1,9)
@@ -93,6 +94,7 @@ def computerTurn():
         data['square9'] = 'O'
     else:
         computerTurn()
+    winner()
 
 def isEmpty(x):
     if x == 1 and data['square1'] == '':
@@ -125,29 +127,29 @@ def winner():
         return True
     elif data['square1'] == 'X' and data['square4'] == 'X' and data['square7'] == 'X':
         return True
-    elif data['square2'] == 'X' and data['square5'] == 'X' and data['square8'] = 'X':
+    elif data['square2'] == 'X' and data['square5'] == 'X' and data['square8'] == 'X':
         return True
-    elif data['square3'] == 'X' and data['square6'] == 'X' and data['square9'] = 'X':
+    elif data['square3'] == 'X' and data['square6'] == 'X' and data['square9'] == 'X':
         return True
-    elif data['square1'] == 'X' and data['square5'] == 'X' and data['square9'] = 'X':
+    elif data['square1'] == 'X' and data['square5'] == 'X' and data['square9'] == 'X':
         return True
-    elif data['square3'] == 'X' and data['square5'] == 'X' and data['square7'] = 'X':
+    elif data['square3'] == 'X' and data['square5'] == 'X' and data['square7'] == 'X':
         return True
     elif data['square1'] == 'O' and data['square2'] == 'O' and data['square3'] == 'O':
         return True
-    elif data['square4'] == 'O' and data['square5'] == 'O' and data['square6'] = 'O':
+    elif data['square4'] == 'O' and data['square5'] == 'O' and data['square6'] == 'O':
         return True
-    elif data['square7'] == 'O' and data['square8'] == 'O' and data['square9'] = 'O':
+    elif data['square7'] == 'O' and data['square8'] == 'O' and data['square9'] == 'O':
         return True
-    elif data['square1'] == 'O' and data['square4'] == 'O' and data['square7'] = 'O':
+    elif data['square1'] == 'O' and data['square4'] == 'O' and data['square7'] == 'O':
         return True
-    elif data['square2'] == 'O' and data['square5'] == 'O' and data['square8'] = 'O':
+    elif data['square2'] == 'O' and data['square5'] == 'O' and data['square8'] == 'O':
         return True
-    elif data['square3'] == 'O' and data['square6'] == 'O' and data['square9'] = 'O':
+    elif data['square3'] == 'O' and data['square6'] == 'O' and data['square9'] == 'O':
         return True
-    elif data['square1'] == 'O' and data['square5'] == 'O' and data['square9'] = 'O':
+    elif data['square1'] == 'O' and data['square5'] == 'O' and data['square9'] == 'O':
         return True
-    elif data['square3'] == 'O' and data['square5'] == 'O' and data['square7'] = 'O':
+    elif data['square3'] == 'O' and data['square5'] == 'O' and data['square7'] == 'O':
         return True
     else:
         return False
