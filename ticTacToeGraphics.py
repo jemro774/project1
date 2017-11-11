@@ -88,9 +88,11 @@ def computerTurn():
     elif num == 8 and isEmpty(8):
         Sprite(o,(380,420))
         data['square8'] = 'O'
-    else:
+    elif num == 9 and isEmpty(9):
         Sprite(o,(540,420))
         data['square9'] = 'O'
+    else:
+        computerTurn()
 
 def isEmpty(x):
     if x == 1 and data['square1'] == '':
