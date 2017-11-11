@@ -116,6 +116,17 @@ def isEmpty(x):
     else:
         return False
 
+def winner():
+    if data['square1'] == 'X' and data['square2'] == 'X' and data['square3'] == 'X':
+        return True
+    elif data['square4'] == 'X' and data['square5'] = 'X' and data['square6'] = 'X':
+        return True
+    elif data['square7'] == 'X' and data['square8'] = 'X' and data['square9'] = 'X':
+        return True
+    elif data['square1'] == 'X' and data['square4'] = 'X' and data['square7'] = 'X':
+        return True
+    elif 
+
 if __name__ == '__main__':
     
     data = {}
