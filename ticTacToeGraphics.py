@@ -65,28 +65,28 @@ def mouseClick(event):
 def computerTurn():
     num = randint(1,9)
     if num == 1 and isEmpty(1):
-        Sprite(o,(380,100))
+        Sprite(o,(220,100))
         data['square1'] = 'O'
     elif num == 2 and isEmpty(2):
-        Sprite(o,(380,260))
+        Sprite(o,(380,100))
         data['square2'] = 'O'
     elif num == 3 and isEmpty(3):
-        Sprite(o,(380,420))
+        Sprite(o,(540,100))
         data['square3'] = 'O'
     elif num == 4 and isEmpty(4):
-        Sprite(o,(220,100))
+        Sprite(o,(220,260))
         data['square4'] = 'O'
     elif num == 5 and isEmpty(5):
-        Sprite(o,(220,260))
+        Sprite(o,(380,260))
         data['square5'] = 'O'
     elif num == 6 and isEmpty(6):
-        Sprite(o,(220,420))
+        Sprite(o,(540,260))
         data['square6'] = 'O'
     elif num == 7 and isEmpty(7):
-        Sprite(o,(540,100))
+        Sprite(o,(220,420))
         data['square7'] = 'O'
     elif num == 8 and isEmpty(8):
-        Sprite(o,(540,260))
+        Sprite(o,(380,420))
         data['square8'] = 'O'
     else:
         Sprite(o,(540,420))
