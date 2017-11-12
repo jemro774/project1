@@ -94,7 +94,6 @@ def computerTurn():
         data['square9'] = 'O'
     else:
         computerTurn()
-    winner()
 
 def isEmpty(x):
     if x == 1 and data['square1'] == '':
@@ -118,7 +117,8 @@ def isEmpty(x):
     else:
         return False
 
-def winner():
+#winner function option #1
+'''def winner():
     if data['square1'] == 'X' and data['square2'] == 'X' and data['square3'] == 'X':
         return True
     elif data['square4'] == 'X' and data['square5'] == 'X' and data['square6'] == 'X':
@@ -152,7 +152,28 @@ def winner():
     elif data['square3'] == 'O' and data['square5'] == 'O' and data['square7'] == 'O':
         return True
     else:
-        return False
+        return False'''
+
+#winner function option #2
+'''def winner():
+    if isEmpty(1) and isEmpty(2) and isEmpty(3):
+        return True
+    elif isEmpty(4) and isEmpty(5) and isEmpty(6):
+        return True
+    elif isEmpty(7) and isEmpty(8) and isEmpty(9):
+        return True
+    elif isEmpty(1) and isEmpty(4) and isEmpty(7):
+        return True
+    elif isEmpty(2) and isEmpty(5) and isEmpty(8):
+        return True
+    elif isEmpty(3) and isEmpty(6) and isEmpty(9):
+        return True
+    elif isEmpty(1) and isEmpty(5) and isEmpty(9):
+        return True
+    elif isEmpty(3) and isEmpty(5) and isEmpty(7):
+        return True
+    else:
+        return False'''
 
 if __name__ == '__main__':
     
