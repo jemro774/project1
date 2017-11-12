@@ -61,7 +61,6 @@ def mouseClick(event):
         Sprite(xpart2,(600,364))
         data['square9'] = 'X'
     computerTurn()
-    winner()
     
 def computerTurn():
     num = randint(1,9)
