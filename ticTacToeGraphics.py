@@ -7,97 +7,105 @@ from random import randint
 
 #allows the user to fill a square with X through clicking
 def mouseClick(event):
-    if event.x < 300 and event.x > 140 and event.y < 184 and event.y > 24 and isEmpty(1):
-        xpart1 = LineAsset(120,120,blackOutline)
-        xpart2 = LineAsset(-120,120,blackOutline)
-        Sprite(xpart1,(160,44))
-        Sprite(xpart2,(280,44))
-        data['square1'] = 'X'
-    elif event.x < 460 and event.x > 300 and event.y < 184 and event.y > 24 and isEmpty(2):
-        xpart1 = LineAsset(120,120,blackOutline)
-        xpart2 = LineAsset(-120,120,blackOutline)
-        Sprite(xpart1,(320,44))
-        Sprite(xpart2,(440,44))
-        data['square2'] = 'X'
-    elif event.x < 620 and event.x > 460 and event.y < 184 and event.y > 24 and isEmpty(3):
-        xpart1 = LineAsset(120,120,blackOutline)
-        xpart2 = LineAsset(-120,120,blackOutline)
-        Sprite(xpart1,(480,44))
-        Sprite(xpart2,(600,44))
-        data['square3'] = 'X'
-    elif event.x < 300 and event.x > 140 and event.y < 344 and event.y > 184 and isEmpty(4):
-        xpart1 = LineAsset(120,120,blackOutline)
-        xpart2 = LineAsset(-120,120,blackOutline)
-        Sprite(xpart1,(160,204))
-        Sprite(xpart2,(280,204))
-        data['square4'] = 'X'
-    elif event.x < 460 and event.x > 300 and event.y < 344 and event.y > 184 and isEmpty(5):
-        xpart1 = LineAsset(120,120,blackOutline)
-        xpart2 = LineAsset(-120,120,blackOutline)
-        Sprite(xpart1,(320,204))
-        Sprite(xpart2,(440,204))
-        data['square5'] = 'X'
-    elif event.x < 620 and event.x > 460 and event.y < 344 and event.y > 184 and isEmpty(6):
-        xpart1 = LineAsset(120,120,blackOutline)
-        xpart2 = LineAsset(-120,120,blackOutline)
-        Sprite(xpart1,(480,204))
-        Sprite(xpart2,(600,204))
-        data['square6'] = 'X'
-    elif event.x < 300 and event.x > 140 and event.y < 504 and event.y > 344 and isEmpty(7):
-        xpart1 = LineAsset(120,120,blackOutline)
-        xpart2 = LineAsset(-120,120,blackOutline)
-        Sprite(xpart1,(160,364))
-        Sprite(xpart2,(280,364))
-        data['square7'] = 'X'
-    elif event.x < 460 and event.x > 300 and event.y < 504 and event.y > 344 and isEmpty(8):
-        xpart1 = LineAsset(120,120,blackOutline)
-        xpart2 = LineAsset(-120,120,blackOutline)
-        Sprite(xpart1,(320,364))
-        Sprite(xpart2,(440,364))
-        data['square8'] = 'X'
-    elif event.x < 620 and event.x > 460 and event.y < 504 and event.y > 344 and isEmpty(9):
-        xpart1 = LineAsset(120,120,blackOutline)
-        xpart2 = LineAsset(-120,120,blackOutline)
-        Sprite(xpart1,(480,364))
-        Sprite(xpart2,(600,364))
-        data['square9'] = 'X'
-    if winner() == True:
-        print('X wins!')
-    computerTurn()
+    if data['Game Over'] == False:
+        if event.x < 300 and event.x > 140 and event.y < 184 and event.y > 24 and isEmpty(1):
+            xpart1 = LineAsset(120,120,blackOutline)
+            xpart2 = LineAsset(-120,120,blackOutline)
+            Sprite(xpart1,(160,44))
+            Sprite(xpart2,(280,44))
+            data['square1'] = 'X'
+        elif event.x < 460 and event.x > 300 and event.y < 184 and event.y > 24 and isEmpty(2):
+            xpart1 = LineAsset(120,120,blackOutline)
+            xpart2 = LineAsset(-120,120,blackOutline)
+            Sprite(xpart1,(320,44))
+            Sprite(xpart2,(440,44))
+            data['square2'] = 'X'
+        elif event.x < 620 and event.x > 460 and event.y < 184 and event.y > 24 and isEmpty(3):
+            xpart1 = LineAsset(120,120,blackOutline)
+            xpart2 = LineAsset(-120,120,blackOutline)
+            Sprite(xpart1,(480,44))
+            Sprite(xpart2,(600,44))
+            data['square3'] = 'X'
+        elif event.x < 300 and event.x > 140 and event.y < 344 and event.y > 184 and isEmpty(4):
+            xpart1 = LineAsset(120,120,blackOutline)
+            xpart2 = LineAsset(-120,120,blackOutline)
+            Sprite(xpart1,(160,204))
+            Sprite(xpart2,(280,204))
+            data['square4'] = 'X'
+        elif event.x < 460 and event.x > 300 and event.y < 344 and event.y > 184 and isEmpty(5):
+            xpart1 = LineAsset(120,120,blackOutline)
+            xpart2 = LineAsset(-120,120,blackOutline)
+            Sprite(xpart1,(320,204))
+            Sprite(xpart2,(440,204))
+            data['square5'] = 'X'
+        elif event.x < 620 and event.x > 460 and event.y < 344 and event.y > 184 and isEmpty(6):
+            xpart1 = LineAsset(120,120,blackOutline)
+            xpart2 = LineAsset(-120,120,blackOutline)
+            Sprite(xpart1,(480,204))
+            Sprite(xpart2,(600,204))
+            data['square6'] = 'X'
+        elif event.x < 300 and event.x > 140 and event.y < 504 and event.y > 344 and isEmpty(7):
+            xpart1 = LineAsset(120,120,blackOutline)
+            xpart2 = LineAsset(-120,120,blackOutline)
+            Sprite(xpart1,(160,364))
+            Sprite(xpart2,(280,364))
+            data['square7'] = 'X'
+        elif event.x < 460 and event.x > 300 and event.y < 504 and event.y > 344 and isEmpty(8):
+            xpart1 = LineAsset(120,120,blackOutline)
+            xpart2 = LineAsset(-120,120,blackOutline)
+            Sprite(xpart1,(320,364))
+            Sprite(xpart2,(440,364))
+            data['square8'] = 'X'
+        elif event.x < 620 and event.x > 460 and event.y < 504 and event.y > 344 and isEmpty(9):
+            xpart1 = LineAsset(120,120,blackOutline)
+            xpart2 = LineAsset(-120,120,blackOutline)
+            Sprite(xpart1,(480,364))
+            Sprite(xpart2,(600,364))
+            data['square9'] = 'X'
+        if winner() == True:
+            print('X wins!')
+            data['Game Over'] = True
+            return
+        computerTurn()
+        if winner() == True:
+            print('O wins!')
+            data['Game Over'] = True
+            return
+        fullBoard()
 
 #allows the computer to fill a square with O in response to a user click
 def computerTurn():
-    num = randint(1,9)
-    if num == 1 and isEmpty(1):
-        Sprite(o,(220,100))
-        data['square1'] = 'O'
-    elif num == 2 and isEmpty(2):
-        Sprite(o,(380,100))
-        data['square2'] = 'O'
-    elif num == 3 and isEmpty(3):
-        Sprite(o,(540,100))
-        data['square3'] = 'O'
-    elif num == 4 and isEmpty(4):
-        Sprite(o,(220,260))
-        data['square4'] = 'O'
-    elif num == 5 and isEmpty(5):
-        Sprite(o,(380,260))
-        data['square5'] = 'O'
-    elif num == 6 and isEmpty(6):
-        Sprite(o,(540,260))
-        data['square6'] = 'O'
-    elif num == 7 and isEmpty(7):
-        Sprite(o,(220,420))
-        data['square7'] = 'O'
-    elif num == 8 and isEmpty(8):
-        Sprite(o,(380,420))
-        data['square8'] = 'O'
-    elif num == 9 and isEmpty(9):
-        Sprite(o,(540,420))
-        data['square9'] = 'O'
-    else:
-        computerTurn()
-    if winner() == True:
+    if data['Game Over'] == False:
+        num = randint(1,9)
+        if num == 1 and isEmpty(1):
+            Sprite(o,(220,100))
+            data['square1'] = 'O'
+        elif num == 2 and isEmpty(2):
+            Sprite(o,(380,100))
+            data['square2'] = 'O'
+        elif num == 3 and isEmpty(3):
+            Sprite(o,(540,100))
+            data['square3'] = 'O'
+        elif num == 4 and isEmpty(4):
+            Sprite(o,(220,260))
+            data['square4'] = 'O'
+        elif num == 5 and isEmpty(5):
+            Sprite(o,(380,260))
+            data['square5'] = 'O'
+        elif num == 6 and isEmpty(6):
+            Sprite(o,(540,260))
+            data['square6'] = 'O'
+        elif num == 7 and isEmpty(7):
+            Sprite(o,(220,420))
+            data['square7'] = 'O'
+        elif num == 8 and isEmpty(8):
+            Sprite(o,(380,420))
+            data['square8'] = 'O'
+        elif num == 9 and isEmpty(9):
+            Sprite(o,(540,420))
+            data['square9'] = 'O'
+        else:
+            computerTurn()
 
 #determines whether a square is empty or full
 def isEmpty(x):
@@ -180,6 +188,7 @@ if __name__ == '__main__':
     data['square7'] = ''
     data['square8'] = ''
     data['square9'] = ''
+    data['Game Over'] = False
     
     #colors
     black = Color(0x000000,1)
