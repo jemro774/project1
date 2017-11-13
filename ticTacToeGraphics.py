@@ -177,7 +177,7 @@ def fullBoard():
 #runs the game
 if __name__ == '__main__':
     
-    #variables for individual squares
+    #variables for individual squares and a variable for "game over"
     data = {}
     data['square1'] = ''
     data['square2'] = ''
