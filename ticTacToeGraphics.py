@@ -5,6 +5,7 @@
 from ggame import *
 from random import randint
 
+#allows the user to fill a square with X through clicking
 def mouseClick(event):
     if event.x < 300 and event.x > 140 and event.y < 184 and event.y > 24 and isEmpty(1):
         xpart1 = LineAsset(120,120,blackOutline)
@@ -60,8 +61,11 @@ def mouseClick(event):
         Sprite(xpart1,(480,364))
         Sprite(xpart2,(600,364))
         data['square9'] = 'X'
+    if winner() == True:
+        print('X wins!')
     computerTurn()
-    
+
+#allows the computer to fill a square with O in response to a user click
 def computerTurn():
     num = randint(1,9)
     if num == 1 and isEmpty(1):
@@ -93,7 +97,9 @@ def computerTurn():
         data['square9'] = 'O'
     else:
         computerTurn()
+    if winner() == True:
 
+#determines whether a square is empty or full
 def isEmpty(x):
     if x == 1 and data['square1'] == '':
         return True
@@ -116,8 +122,8 @@ def isEmpty(x):
     else:
         return False
 
-#winner function option #1
-'''def winner():
+#determines the patterns of X's and O's that lead to a win
+def winner():
     if data['square1'] == 'X' and data['square2'] == 'X' and data['square3'] == 'X':
         return True
     elif data['square4'] == 'X' and data['square5'] == 'X' and data['square6'] == 'X':
@@ -151,31 +157,19 @@ def isEmpty(x):
     elif data['square3'] == 'O' and data['square5'] == 'O' and data['square7'] == 'O':
         return True
     else:
-        return False'''
+        return False
 
-#winner function option #2
-'''def winner():
-    if isEmpty(1) and isEmpty(2) and isEmpty(3):
-        return True
-    elif isEmpty(4) and isEmpty(5) and isEmpty(6):
-        return True
-    elif isEmpty(7) and isEmpty(8) and isEmpty(9):
-        return True
-    elif isEmpty(1) and isEmpty(4) and isEmpty(7):
-        return True
-    elif isEmpty(2) and isEmpty(5) and isEmpty(8):
-        return True
-    elif isEmpty(3) and isEmpty(6) and isEmpty(9):
-        return True
-    elif isEmpty(1) and isEmpty(5) and isEmpty(9):
-        return True
-    elif isEmpty(3) and isEmpty(5) and isEmpty(7):
+#tells the computer that the board is full
+def fullBoard():
+    if isEmpty(1) == False and isEmpty(2) == False and isEmpty(3) == False and isEmpty(4) == False and isEmpty(5) == False and isEmpty(6) == False and isEmpty(7) == False and isEmpty(8) == False and isEmpty(9) == False:
         return True
     else:
-        return False'''
+        return False
 
+#runs the game
 if __name__ == '__main__':
     
+    #variables for individual squares
     data = {}
     data['square1'] = ''
     data['square2'] = ''
@@ -187,17 +181,21 @@ if __name__ == '__main__':
     data['square8'] = ''
     data['square9'] = ''
     
+    #colors
     black = Color(0x000000,1)
     white = Color(0xffffff,1)
     
+    #outline for graphics
     blackOutline = LineStyle(8,black)
     
+    #lines for the board, the X's, and a circle for the O's
     verticalLine = LineAsset(0,480,blackOutline)
     horizontalLine = LineAsset(480,0,blackOutline)
     xpart1 = LineAsset(120,120,blackOutline)
     xpart2 = LineAsset(-120,120,blackOutline)
     o = CircleAsset(60,blackOutline,white)
     
+    #the board
     Sprite(verticalLine,(300,24))
     Sprite(verticalLine,(460,24))
     Sprite(horizontalLine,(140,184))
